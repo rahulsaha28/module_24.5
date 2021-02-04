@@ -9,7 +9,7 @@
 
 // api call
 function getApiData(city, key, callBack) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
         .then(res => res.json())
         .then(data => callBack(data));
 }
