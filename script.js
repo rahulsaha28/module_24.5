@@ -18,7 +18,7 @@ function getApiData(city, key, callBack) {
 // update UI
 function updateUI(data) {
     if (data.cod == 200) {
-        let imgLink = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        let imgLink = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         document.getElementById("w-city").innerHTML = data.name;
         document.getElementById("w-tem").innerHTML = data.main.temp;
         document.getElementById("w-description").innerHTML = data.weather[0].description;
